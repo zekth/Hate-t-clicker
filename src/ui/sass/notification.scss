@@ -1,0 +1,23 @@
+.notification-bar {
+  position: absolute;
+  top:60px;
+  left:0px;
+  height: 100%;
+  z-index: 200;
+  transition: all .4s cubic-bezier(.12,.85,.55,.97);
+  .notification-center {
+    display: inline-block;
+    background-color: #dddddd;
+    width:300px;
+    height: 100%;
+    margin-bottom:60px;
+  }
+  .notification-toggle {
+    vertical-align: top;
+    background-color: red;
+    display: inline-block;
+  }
+}
+.notification-bar.toggled{
+  margin-left:-300px;
+}
